@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+    godev:
+        image: godev:latest
+        volumes:
+            - /var/docker/data/godev/bin/:/go/bin:z
+            - /var/docker/data/godev/src/:/go/src:z
+        tty: true
